@@ -1,7 +1,8 @@
 #===================================================================================#
 FROM ubuntu:24.04 AS builder
 
-# Install build dependencies including static libraries
+#-------------------------------------------------------#
+# Install system packages
 RUN apt-get update && \
   apt-get install -y --no-install-recommends \
   build-essential \
@@ -26,7 +27,7 @@ RUN apt-get update && \
 ENV RDKIT_VERSION=Release_2025_09_3
 WORKDIR /build
 
-RUN wget https://github.com/rdkit/rdkit/archive/refs/tags/${RDKIT_VERSION}.tar.gz && \
+RUN wget -q https://github.com/rdkit/rdkit/archive/refs/tags/${RDKIT_VERSION}.tar.gz && \
   tar xzf ${RDKIT_VERSION}.tar.gz && \
   rm ${RDKIT_VERSION}.tar.gz
 
@@ -42,12 +43,10 @@ RUN cmake .. \
   -DRDK_BUILD_FREETYPE_SUPPORT=OFF \
   && make -j"$(nproc)" && make install
 
-#-------------------------------------------------------#
-#
 ## Debug: List available static libraries
-#RUN echo "=== Available RDKit static libraries ===" && \
-#  ls -1 /opt/rdkit/lib/*_static.a | head -60
+#RUN ls -1 /opt/rdkit/lib/*_static.a
 
+#-------------------------------------------------------#
 # Build smiles2pdb
 WORKDIR /app
 COPY smiles2pdb.cpp .
@@ -56,17 +55,15 @@ COPY CMakeLists.txt .
 WORKDIR /app/build
 RUN cmake .. && make -j"$(nproc)"
 
+#-------------------------------------------------------#
 # Verify the binary is fully static
-RUN echo "=== Checking binary dependencies ===" && \
-  ldd /app/build/smiles2pdb || echo "Fully static binary (no dynamic dependencies)" && \
+RUN ldd /app/build/smiles2pdb && \
   file /app/build/smiles2pdb && \
   ls -lh /app/build/smiles2pdb
 
-# Update library cache so binary can find RDKit libs
-RUN ldconfig /opt/rdkit/lib
-
-# Test the binary
+# Test the binary by running a simple case
 RUN /app/build/smiles2pdb "CCO" /tmp/test.pdb && \
   cat /tmp/test.pdb && \
-  echo "=== Build successful! ==="
+  echo "Build successful!"
+
 #===================================================================================#
