@@ -45,7 +45,7 @@ system packages and a from source installation of RDKit.
 
 To facilitate the compilation we have provided a Dockerfile that acts a builder.
 
-Compile the tool inside the container with:
+Compile the tool inside the container with (this operation will take several minutes):
 
 ```bash
 docker build -t builder .
